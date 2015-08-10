@@ -15,6 +15,10 @@
 @brown: #887E6F;
 @lightbrown: #C9C0B5;
 
+@background: @black;
+
+
+
 /* ---------------------------------- */
 /* --- Sizes ------------------------ */
 /* ---------------------------------- */
@@ -61,13 +65,19 @@
 /* --- Slideshow styles ------------- */
 /* ---------------------------------- */
 
-#slideshow {
+body {
+  font-family: Georgia;
+}
   &, &.black {
-    .slide {
+
+
+    .remark-slide {
       color: @white;
       background-color: @black;
 
-      .content {
+      .remark-slide-content {
+        background-color: @background;
+
         li {
           color: @white;
         }
@@ -81,7 +91,9 @@
         a {
           color: @red;
         }
-        code { color: @black; background-color: #FDF6E3; }
+        code {
+          color: @black; background-color: #FDF6E3;
+        }
 
         &.cols {
           .col h1 {
@@ -89,7 +101,9 @@
           }
         }
 
+
         &.front-page {
+
           .bekk-logo(1/7, center 30px);
 
           h1 {
@@ -179,8 +193,8 @@
     }
   }
 
-  .slide {
-    .content {
+  .remark-slide {
+    .remark-slide-content {
       padding-bottom: 2em;
 
       /* ---------------------------------- */
@@ -215,7 +229,10 @@
           z-index: -1;
         }
 
-        > span { padding: 0 0.6em 0 0; }
+        > span {
+          padding: 0 0.6em 0 0;
+          background: @background;
+        }
         code { text-transform: none; font-style: normal; }
       }
 
@@ -225,7 +242,11 @@
         &:hover { text-decoration: underline; }
       }
 
-      code { padding: 3px; font-family: Inconsolata, Consolas, Monaco, monospace; }
+      code {
+        padding: 3px;
+        font-family: Inconsolata, Consolas, Monaco, monospace;
+        font-size: 16px;
+      }
       pre code { padding: 1em; .rounded-corners; }
 
       /* ---------------------------------- */
@@ -264,14 +285,16 @@
 
       &.cols {
         .col {
+          float: left;
+          margin-left: 2%;
+
+          &:first-of-type { margin-left: 0; }
+
           h1 {
             font-size: 1.1em;
             text-transform: none;
             font-style: normal;
           }
-
-          float: left; margin-right: 2%;
-          &:last-child { margin-right: 0;}
         }
 
         &.two   { .col { width: 49%; } }
@@ -359,4 +382,3 @@
       }
     }
   }
-}

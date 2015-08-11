@@ -1,0 +1,42 @@
+&.front-page {
+  @h1-line-width: 6em;
+
+  background: @background data-uri("images/bekk.svg") no-repeat center 1em;
+  background-size: 80px;
+  text-align: center;
+  vertical-align: bottom;
+
+  h1 {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto 3.2em auto;
+    width: 16em;
+
+    &:after {
+      border-top: 4px solid @red;
+      position: absolute;
+      left: 50%;
+      top: 1.2em;
+      content: "";
+      width: @h1-line-width;
+      margin-left: -(@h1-line-width / 2);
+      z-index: -1;
+    }
+  }
+
+  h2 {
+    height: 3em;
+    font-weight: normal;
+    margin: 2em auto 2em auto;
+    max-width: 25em;
+  }
+
+  // Maybe we should use a list instead of paragraphs for this
+  p {
+    font-size: 0.7em;
+    margin: 0.3em 0;
+  }
+
+  // Do not display current slide on the front page
+  .remark-slide-number { display: none; }
+}

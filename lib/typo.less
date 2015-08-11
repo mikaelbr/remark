@@ -1,0 +1,42 @@
+-webkit-font-smoothing: antialiased;
+font-family: "Fedra Serif", Georgia, serif;
+font-weight: 100;
+line-height: 1.5;
+
+color: #c6c8ca;
+background-color: @background;
+
+
+h1, h2 {
+  font-family: "Conduit ITC W01 Regular", Arial, sans-serif;
+  line-height: 1.2;
+  color: #ebebeb;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+> h1 {
+  font-weight: 100;
+  text-transform: uppercase;
+
+  display: table;
+  white-space: nowrap;
+  margin-bottom: 1em;
+
+  &:after {
+    border-top: 1px solid #515151;
+    content: '';
+    display: table-cell;
+    position: relative;
+    top: 0.6em;
+    width: 100%;
+    left: 1.5%;
+  }
+
+}

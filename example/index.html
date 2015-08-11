@@ -57,6 +57,10 @@ Eksempel-slide:
   18/11/2011
 ```
 
+---
+
+# Agenda
+
 For agenda, legg til klassen `agenda` og lag liste:
 
   ```html
@@ -67,32 +71,6 @@ For agenda, legg til klassen `agenda` og lag liste:
   * tredje punkt
   ```
 
-
----
-
-class: round
-
-# Rundt bilde
-
-![](https://github.com/kjbekkelund/remark-bekk/raw/master/example/images/round/24.png)
-
----
-
-class: round
-
-![](https://github.com/kjbekkelund/remark-bekk/raw/master/example/images/round/24.png)
-
----
-
-# Rundt bilde
-
-Eksempel-slide:
-
-  ```html
-  .round
-
-  ![alternativ tekst](images/round/24.png)
-  ```
 
 ---
 
@@ -112,7 +90,7 @@ class: pushed
 
 # Stort bilde med rundt boks
 
-.circle.yellow.top-right[Fin tekst]
+.circle.red.top-right[Fin tekst]
 
 Og såklart litt tekst
 
@@ -152,9 +130,6 @@ Og:
 
 # Hva med highlighting av kode?
 
-Vi bruker [Solarized](http://ethanschoonover.com/solarized), som ser ut
-til å passe godt med BEKK-themet.
-
 Et Ruby-eksempel:
 
   ```ruby
@@ -168,9 +143,7 @@ Og et JavaScript-eksempel:
 ```javascript
   var names = []
   for (var i = 0, l = people.length; i &lt; l; i++) {
-    var person = people[i];
-    var name = person.name.slice(0,1).toUpperCase() +
-               person.name.slice(1);
+    var name = people[i].name.slice(0,1).toUpperCase();
     names.push(name);
   }
 ```
@@ -200,10 +173,28 @@ class: middle center
 
 Kode for å få til midtjustert overskrift:
 
-  ```html
+```html
   class: middle center
 
   # Midtjusterte overskrifter
+```
+
+---
+
+class: center middle
+
+![](https://github.com/kjbekkelund/remark-bekk/raw/master/example/images/round/24.png)
+
+---
+
+# Midtjusterte bilde
+
+Eksempel-slide:
+
+  ```html
+  .middle center
+
+  ![alternativ tekst](images/round/24.png)
   ```
 
 ---
@@ -219,8 +210,6 @@ class: cols three
 
   ```html
   class: cols three
-
-  # Kolonnetest
 
   .col[
     kolonne 1
@@ -248,7 +237,7 @@ class: cols three
   Vi støtter også to kolonner ved bruk av klassen `two` istedenfor `three`
 
   ```html
-  .cols.two
+  class: cols two
   ```
 ]
 
@@ -267,7 +256,7 @@ class: cols three
 ]
 
 .col[
-  .circle.red.centered[Kolonne 2]
+  .circle.green.centered[Kolonne 2]
 
   * liste!
   * nytt element

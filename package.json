@@ -13,7 +13,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish":"mkdir -p build &&./node_modules/.bin/uglifyjs lib/bekk.js > build/bekk.js && ./node_modules/.bin/lessc lib/bekk.less > build/bekk.css"
+    "prepublish":"rm -r build && mkdir -p build &&./node_modules/.bin/uglifyjs lib/bekk.js > build/bekk.js && ./node_modules/.bin/lessc lib/bekk.less > build/bekk.css"
   },
   "repository": {
     "type": "git",

@@ -1,28 +1,22 @@
 {
   "name": "remark-bekk",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Bekk remark template",
-  "main": "lib/bekk.js",
-  "directories": {
-    "example": "example"
-  },
-  "dependencies": {
-    "less": "^1.3.0",
-    "uglify-js": "^1.2.6"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish":"rm -r build && mkdir -p build &&./node_modules/.bin/uglifyjs lib/bekk.js > build/bekk.js && ./node_modules/.bin/lessc lib/bekk.less > build/bekk.css"
+    "prepublish":"rm -r build && mkdir -p build && ./node_modules/.bin/lessc lib/bekk.less > build/bekk.css"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kjbekkelund/remark-bekk.git"
+    "url": "https://github.com/bekk/remark.git"
   },
   "author": "Kim Joar Bekkelund <kjbekkelund@gmail.com>",
   "license": "BEKK",
   "bugs": {
-    "url": "https://github.com/kjbekkelund/remark-bekk/issues"
+    "url": "https://github.com/bekk/remark/issues"
   },
-  "homepage": "https://github.com/kjbekkelund/remark-bekk"
+  "homepage": "https://github.com/bekk/remark",
+  "devDependencies": {
+    "less": "^1.3.0"
+  }
 }

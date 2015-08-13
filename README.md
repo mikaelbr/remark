@@ -1,12 +1,23 @@
 # BEKK-theme til [remark](https://github.com/gnab/remark)
 
-Sjekk ut [introduksjon](http://kjbekkelund.github.com/remark-bekk/example) til BEKK-theme for remark.
 
 For å inkludere BEKK-themet:
 
-```html
-<script src="http://cloud.github.com/downloads/gnab/remark/remark-0.3.6.min.js" type="text/javascript"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-<script src="http://cloud.github.com/downloads/kjbekkelund/remark-bekk/bekk-0.0.4.js" type="text/javascript"></script>
-<link href="http://cloud.github.com/downloads/kjbekkelund/remark-bekk/bekk-0.0.4.css" type="text/css" rel="stylesheet">
+
+```bash
+npm install bekk/remark
 ```
+
+
+```html
+<link href="node_modules/remark/dist/bekk.css" type="text/css" rel="stylesheet">
+<script src="node_modules/remark/vendor/remark-0.11.0.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+  var slideshow = remark.create({
+    ratio: '16:9',
+    highlightStyle: 'monokai'
+  });
+</script>
+```
+
+Sjekk ut [example](https://github.com/bekk/remark/blob/master/example/index.html) for mer info

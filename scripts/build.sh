@@ -2,6 +2,6 @@
 
 set -e
 
-rm -rf build
-mkdir -p build
-./node_modules/.bin/lessc --no-ie-compat lib/bekk.less > build/bekk.css
+rm -rf dist
+mkdir -p dist
+./node_modules/.bin/lessc --no-ie-compat lib/bekk.less > dist/bekk.css

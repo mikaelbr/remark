@@ -74,54 +74,80 @@ For agenda, legg til klassen `agenda` og lag liste:
 
 ---
 
-class: fullscreen
+class: middle center
 
-![](images/shoes.jpg)
+# Midtjusterte overskrifter
 
-.overlay.bottom[
-  #Stort bilde
+---
 
-  Og litt undertekst
-]
+# Midtjusterte overskrifter
+
+Kode for å få til midtjustert overskrift:
+
+```html
+  class: middle center
+
+  # Midtjusterte overskrifter
+```
+
+---
+
+class: center middle
+
+![](images/round.png)
+
+---
+
+# Midtjusterte bilde
+
+Eksempel-slide:
+
+  ```html
+  .middle center
+
+  ![alternativ tekst](images/round.png)
+  ```
+---
+
+
+background-image: url(images/shoes.jpg)
+class: middle center
+
+
+  # Stort bilde med text
+
 
 </div>
 ---
 
-class: fullscreen
+background-image: url(images/shoes.jpg)
+class: middle center
 
-![](images/shoes.jpg)
 
-.overlay.bottom[
   # Stort bilde med rundt boks
 
-  Og såklart litt tekst
-]
-
-.circle.red.top-right[Fin tekst]
-
-
-
+  .circle.red.top-right[
+    Fin tekst
+  ]
 
 ---
 
 # Stort bilde
 
-Bruk klassen `pushed` og legg til et stort bilde.
+Bruk property `background-image` og legg til et stort bilde.
 
 Eksempel-slide:
 
   ```html
-  class: fullscreen
+  background-image: url(images/shoes.jpg)
+  class: middle center
 
-  ![](pushed.jpg)
 
-  .overlay.bottom[
-    # Stort bilde med rundt boks
+  # Stort bilde med rundt boks
 
-    Og såklart litt tekst
+  .circle.red.top-right[
+    Fin tekst
   ]
-
-  .circle.red.top-right[Fin tekst]
   ```
 
 ---
@@ -165,47 +191,6 @@ For kodeblokk, ha 2 mellomrom før kode:
     return "test"
   }
 ```
----
-
-# `.javascript testFunction()`
-
-Kode i overskrift ser fortsatt litt vel funky ut, og bør nok unngås.
-
----
-
-class: middle center
-
-# Midtjusterte overskrifter
-
----
-
-# Midtjusterte overskrifter
-
-Kode for å få til midtjustert overskrift:
-
-```html
-  class: middle center
-
-  # Midtjusterte overskrifter
-```
-
----
-
-class: center middle
-
-![](images/round.png)
-
----
-
-# Midtjusterte bilde
-
-Eksempel-slide:
-
-  ```html
-  .middle center
-
-  ![alternativ tekst](images/round.png)
-  ```
 
 ---
 

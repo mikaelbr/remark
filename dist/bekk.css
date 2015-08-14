@@ -82,6 +82,11 @@
   color: #ebebeb;
   font-weight: normal;
 }
+.remark-slide .remark-slide-content p,
+.remark-slide .remark-slide-content h1,
+.remark-slide .remark-slide-content h2 {
+  margin-top: 0;
+}
 .remark-slide .remark-slide-content h1 {
   font-size: 34px;
   text-transform: uppercase;
@@ -89,7 +94,7 @@
 .remark-slide .remark-slide-content > h1 {
   display: table;
   white-space: nowrap;
-  margin-bottom: 1em;
+  margin: 20px 0 1em 0;
 }
 .remark-slide .remark-slide-content > h1:after {
   border-top: 1px solid #515151;
@@ -101,7 +106,7 @@
   left: 1.5%;
 }
 .remark-slide .remark-slide-content h2 {
-  font-size: 24px;
+  font-size: 28px;
 }
 .remark-slide .remark-slide-content ul {
   list-style: disc outside;

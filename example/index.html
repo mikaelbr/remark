@@ -16,9 +16,9 @@ class: front-page
 
 Sjekk ut [remark](https://github.com/gnab/remark)
 
-Kim Joar Bekkelund
+Bjarne BEKK-konsulent
 
-18/11/2011
+01/02/1970
 
 ---
 
@@ -175,7 +175,7 @@ Et Ruby-eksempel:
 Og et JavaScript-eksempel:
 
 ```javascript
-  var names = []
+  var names = [];
   for (var i = 0, l = people.length; i &lt; l; i++) {
     var name = people[i].name.slice(0,1).toUpperCase();
     names.push(name);
@@ -184,11 +184,34 @@ Og et JavaScript-eksempel:
 
 For kodeblokk, ha 2 mellomrom før kode:
 
-```pre
+```javascript
   function test() {
-    return "test"
+    return "test";
   }
 ```
+
+---
+
+# Lenker og knapper
+
+  [vanlig lenke](#)
+
+  <a href="#" class="btn">Stor knapp</a>
+
+  <a href="#" class="btn loud">Større knapp</a>
+
+
+```html
+  class: center middle
+
+  [vanlig lenke](#)
+
+  <a href="#" class="btn">Stor knapp</a>
+
+  <a href="#" class="btn loud">Større knapp</a>
+```
+
+Markdown støtter ikke lenker med klasse, så vi må frem med litt html
 
 ---
 
@@ -197,7 +220,7 @@ class: cols three
 # 3 kolonner
 
 .col[
-  Første kolonne.
+  ## Første kolonne.
 
   For å få til kolonner må vi bruke litt HTML, sammen med to klasser.
 
@@ -219,13 +242,11 @@ class: cols three
 ]
 
 .col[
-  Andre kolonne
-
-  noe mer
+  ## Andre kolonne
 ]
 
 .col[
-  Tredje kolonne
+  ## Tredje kolonne
 
   Vi støtter også to kolonner ved bruk av klassen `two` istedenfor `three`
 
@@ -259,7 +280,7 @@ class: cols three
 .col[
   .circle.yellow.centered[Kolonne 3]
 
-  # overskrift
+  ## Overskrift
 
   Overskrifter fungerer også i kolonner!
 ]
@@ -315,6 +336,14 @@ class: middle center
 
 * [remark](https://github.com/gnab/remark)
 * [Markdown syntax](http://daringfireball.net/projects/markdown/syntax)
+
+---
+
+class: center middle bekk-top
+
+# TAKK!
+Bjarne BEKK-konsulent
+
 
     </textarea>
 

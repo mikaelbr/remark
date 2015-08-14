@@ -20,4 +20,4 @@ npm install bekk/remark
 </script>
 ```
 
-Sjekk ut [example](https://github.com/bekk/remark/blob/master/example/index.html) for mer info
+Sjekk ut [example](http://bekk.github.io/remark/example/) for mer info

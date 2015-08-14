@@ -378,7 +378,7 @@
 }
 .remark-slide .remark-slide-content.agenda ul li {
   text-transform: uppercase;
-  padding: 1em 0;
+  margin: 1em 0;
   font-weight: normal;
 }
 .remark-slide .remark-slide-content.fullscreen {
